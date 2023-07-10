@@ -1,0 +1,13 @@
+DROP TABLE IF EXISTS libros;
+
+CREATE TABLE libros(
+  codigo INTEGER UNSIGNED AUTO_INCREMENT,
+  titulo VARCHAR(50) NOT NULL,
+  autor VARCHAR(50),
+  editorial VARCHAR(25),
+  precio FLOAT UNSIGNED,
+  cantidad INTEGER UNSIGNED,
+  PRIMARY KEY (codigo)
+ );
+
+DESCRIBE libros;
